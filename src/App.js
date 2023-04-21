@@ -10,8 +10,6 @@ import WatchMovie from "./screens/WatchMovie";
 
 function App() {
   const userExists = useSelector((state) => state.user.value);
-  console.log(userExists);
-  const user = null;
   return (
     <div className="app">
       <Toaster />
