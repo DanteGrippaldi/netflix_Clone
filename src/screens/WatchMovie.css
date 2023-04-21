@@ -1,0 +1,139 @@
+.watchMovie__outer {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.watchMovie__banner {
+  position: relative;
+  height: 100vh;
+  color: white;
+  object-fit: contain;
+  background-color: black;
+}
+
+.watchMovie__contents {
+  padding-top: 80px;
+  height: 190px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 769px) {
+  .watchMovie__contents {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .watchMovie__video {
+    display: none;
+  }
+
+  .watchMovie__title {
+    text-align: left;
+    font-weight: 400;
+    font-size: 25px;
+  }
+
+  .watchMovie__overview {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .watchMovie__videoSmall {
+    display: none;
+  }
+
+  .watchMovie__contents {
+    padding-left: 50px;
+  }
+
+  .watchMovie__title {
+    font-size: 50px;
+    font-weight: 700;
+  }
+}
+
+.watchMovie__videoSmall {
+  padding-top: 20px;
+}
+
+.watchMovie__video {
+  padding-right: 20px;
+  height: 540px;
+  width: 850px;
+}
+
+.watchMovie__details {
+  padding-top: 30px;
+}
+
+.watchMovie__title {
+}
+
+.watchMovie__vote_date {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.watchMovie__vote {
+  color: green;
+}
+
+.watchMovie__date {
+  padding-left: 20px;
+}
+
+.watchMovie__overview {
+  padding: 2px;
+  width: 45rem;
+  font-size: 15px;
+  font-weight: 100;
+  max-width: 400px;
+  height: 80px;
+}
+
+.watchMovie__button {
+  margin-top: 10px;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  padding-left: 0.2vw;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  background-color: rgba(51, 51, 51, 0.5);
+  padding-bottom: 0.5rem;
+}
+
+.watchMovie__button:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+}
+
+.watchMovie__more-like-this {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200vh;
+  height: fit-content;
+  padding: 20px;
+}
+
+.watchMovie__heading {
+  border-width: 5px;
+  border-bottom: red;
+}
+
+.watchMovie__tag {
+  color: white;
+  font-size: xx-large;
+  border-bottom: red;
+}
